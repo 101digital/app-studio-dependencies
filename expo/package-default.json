@@ -87,7 +87,8 @@
     "metro-react-native-babel-preset": "0.77.0",
     "patch-package": "8.0.0",
     "postinstall-postinstall": "^2.1.0",
-    "typescript": "~5.8.3"
+    "typescript": "~5.8.3",
+    "dotenv-cli": "^8.0.0"
   },
   "private": true
 }
