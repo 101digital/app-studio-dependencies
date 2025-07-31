@@ -67,7 +67,7 @@
     "expo-font": "13.2.2",
     "expo-localization": "16.1.6",
     "expo-splash-screen": "0.30.10",
-    "jsonpointer": "^5.0.1",
+    "jsonpointer": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.25.2",
