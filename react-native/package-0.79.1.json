@@ -82,7 +82,7 @@
     "react-native-eject": "1.0.2",
     "react-native-rename": "^3.2.14",
     "yarn": "^1.22.22",
-    "jsonpointer": "^5.0.1",
+    "jsonpointer": "^5.0.1"
   },
   "devDependencies": {
     "@tsconfig/react-native": "^3.0.5",
