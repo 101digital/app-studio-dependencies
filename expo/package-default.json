@@ -96,5 +96,8 @@
     "react-test-renderer": "19.1.0",
     "dotenv-cli": "8.0.0"
   },
-  "private": true
+  "private": true,
+  "resolutions": {
+    "react-native-safe-area-context": "5.5.2"
+  }
 }
