@@ -19,12 +19,14 @@ paths:
           required: true
           schema:
             type: string
+            default: ${env.SUPABASE_API_KEY}
           description: Supabase anonymous key
         - name: Authorization
           in: header
           required: true
           schema:
             type: string
+            default: Bearer ${env.SUPABASE_AUTHORIZATION_TOKEN}
           description: Bearer token for authentication
         - name: order
           in: query
@@ -77,12 +79,14 @@ paths:
           required: true
           schema:
             type: string
+            default: ${env.SUPABASE_API_KEY}
           description: Supabase anonymous key
         - name: Authorization
           in: header
           required: true
           schema:
             type: string
+            default: Bearer ${env.SUPABASE_AUTHORIZATION_TOKEN}
           description: Bearer token for authentication
         - name: Prefer
           in: header
@@ -91,6 +95,27 @@ paths:
             type: string
             default: return=minimal
           description: Preference for response representation
+        - name: body
+          in: query
+          required: true
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+                description: Name of the task
+                example: "Write API documentation"
+              status:
+                type: string
+                enum:
+                  - TODO
+                  - DONE
+                default: TODO
+                description: Initial status of the task
+                example: "TODO"
+            required:
+              - name
+          description: Task creation parameters
       requestBody:
         required: true
         content:
@@ -134,12 +159,14 @@ paths:
           required: true
           schema:
             type: string
+            default: ${env.SUPABASE_API_KEY}
           description: Supabase anonymous key
         - name: Authorization
           in: header
           required: true
           schema:
             type: string
+            default: Bearer ${env.SUPABASE_AUTHORIZATION_TOKEN}
           description: Bearer token for authentication
         - name: select
           in: query
@@ -186,12 +213,14 @@ paths:
           required: true
           schema:
             type: string
+            default: ${env.SUPABASE_API_KEY}
           description: Supabase anonymous key
         - name: Authorization
           in: header
           required: true
           schema:
             type: string
+            default: Bearer ${env.SUPABASE_AUTHORIZATION_TOKEN}
           description: Bearer token for authentication
       requestBody:
         required: true
@@ -241,12 +270,14 @@ paths:
           required: true
           schema:
             type: string
+            default: ${env.SUPABASE_API_KEY}
           description: Supabase anonymous key
         - name: Authorization
           in: header
           required: true
           schema:
             type: string
+            default: Bearer ${env.SUPABASE_AUTHORIZATION_TOKEN}
           description: Bearer token for authentication
       responses:
         "204":
