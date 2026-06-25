@@ -90,7 +90,10 @@
     "rn-swipe-button": "^3.0.1",
     "tsx": "^4.7.0",
     "xdate": "^0.8.2",
-    "yarn": "^1.22.21"
+    "yarn": "^1.22.21",
+    "expo-blur": "55.0.14",
+    "@tanstack/react-query": "5.101.0",
+    "zustand": "5.0.14"
   },
   "devDependencies": {
     "@babel/core": "7.25.2",
